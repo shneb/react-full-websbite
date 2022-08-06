@@ -1,0 +1,67 @@
+.card {
+  max-width: 350px;
+  min-width: 100px;
+  margin: 0 2rem;
+  padding: 3rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-bottom: 7px solid #b93200;
+}
+.card h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.card a[href^="tel:"]::before {
+  content: "";
+  background: url(../../assets/Phone.ico);
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+}
+.card a[href^="mailto:"]::before {
+  content: "";
+  background: url(../../assets/Email.ico);
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+}
+.card p {
+  color: #fff;
+  line-height: 30px;
+}
+.card p a {
+  color: #fff;
+  margin: 0 0 0 1%;
+}
+.card h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.card h3 {
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border-bottom: 4px solid #b93200;
+}
+.card h4 {
+  color: #fff;
+}
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 0 1rem;
+    padding: 3rem;
+  }
+}

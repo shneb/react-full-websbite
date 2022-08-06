@@ -2,23 +2,18 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <Link to="/">Home</Link>
     </p>
     <p>
-      <a href="#wgpt3">what is GPT?</a>
+      <Link to="/about-us">About us</Link>
     </p>
     <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#features">Case Studies</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
+      <Link to="/contact-us">Contact us</Link>
     </p>
   </>
 );

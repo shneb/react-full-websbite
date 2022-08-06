@@ -21,6 +21,7 @@ const WhatGPT3 = () => {
         <Feature
           title="Chatbots"
           text="We so opinion friends me message as delight. Whole front do of plate heard oh ought."
+          isBollet={true}
         />
         <Feature
           title="Knowledgebase"
